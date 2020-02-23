@@ -42,7 +42,7 @@
       <input  class="form-control" (input)="onDistanceChange($event.target.value)" />
     </div>
 
-    <div *ngIf="(distance | convert: 'km') > 10" class="col">
+    <div *ngIf="(distance | convert: 'km') >= 1" class="col">
 
        <label>
          <b>Distance in {{ mesurementType }}</b>
