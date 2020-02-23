@@ -6,5 +6,40 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-pipes';
+
+  name: string;
+  date: string;
+  amount: number;
+  distance: number;
+  mesurementType: string;
+
+
+
+  onNameChange(value: string) {
+
+    this.name = value;
+
+  }
+
+
+  onDateChange(value: string) {
+
+    this.date = value;
+
+  }
+
+
+  onAmountChange(value: string) {
+
+    this.amount = parseFloat(value);
+
+  }
+
+  onDistanceChange(value: string) {
+
+    this.distance = parseFloat(value);
+    this.mesurementType = "Kilometers"
+
+  }
+
 }
